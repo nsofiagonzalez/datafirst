@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>datafirst</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+             <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo" style="width:50px;" class="rounded-pill">
+              </a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Casa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="form.html">Registrarse</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="">
+    <div class="container-fluid p-5 bg-dark text-white text-center">
+        <h1>DATAFIRST</h1>
+        <h4 class="text-body-muted">Noticias y actualidad</h4> 
+      </div></div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-sm-4">
+            
+            <h3 class="text-center">¿Qué es datafirst?</h3>
+            <p>Data first en una entidad dedicada a informar y proteger los valores liberales que lograron una Argentina próspera.</p>
+            <p>"No hay libertad para el hombre donde su seguridad, su vida y sus bienes están a merced del capricho de un mandatario"</p>
+            <p class="text-secondary text-center">Juan Bautista Alberdi</p>
+        </div>
+          <div class="col-sm-4">
+            <h3 class="text-center">Defendemos la libertad </h3>
+            <p>Somos la alternativa a los medios hegemónicos, estamos en contra del establishment argentino comandado por políticos corruptos</p>
+            <p>"La conciencia es el mejor juez que tiene un hombre de bien"<br>
+            "Robar es un delito, pero arruinar el país es traicionar a la Patria</p>
+            <p class="text-secondary text-center">José de San Martín</p>
+        </div>
+          <div class="col-sm-4">
+            <h3 class="text-center">Defendemos el respeto</h3>        
+            <p>El liberalismo se opone a todo autoritarismo estatal. </p>
+            <p>"El poder que posee un multimillonario sobre mi es muchísimo menor que el que posee el más insignificante funcionario, el cual maneja el poder coercitivo del Estado para decidir cómo podré vivir y trabajar"</p>
+            <p class="text-secondary text-center">Friedrich Von Hayek</p>   
+        </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="explayar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-tittle fs-5" id="modal-titulo">Titulo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span id="cuerpo-modal"></span>
+                    <span id="descripcion-informacion"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="col-12 btn btn-success" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+<div class="container mt-2">
+    <div id="titulos" class="text-center row col-10-offset-0" data-bs-theme="dark">
+        <div class="col-sm-col-lg-6 col-xl-4 card">
+            <span class="h4 text-center card-header mt-2 titulos-individuales">Alberto Feranández</span>
+            <div class="card-body">
+                <img src="img/af.jpg" class="col-12 img-thumbnail" alt="">
+                <span id="describir"></span>
+            </div>
+            <span class="card-footer mb-2">por: Sofía Gonzalez</span>
+            <button type="button" onclick="open1()" class="btn btn-outline-info col-12 mb-2" data-bs-toggle="modal" data-bs-target="#explayar">Más info</button>
+    </div>
+        <div class="col-lg-6 col-xl-4 card">
+        <span class="h4 text-center card-header mt-2 titulos-individuales">Lacalle Pou</span>
+        <div class="card-body">
+            <img src="img/Pou.jpg" style="height: 250px;width: 500px;" class="col-12 img-thumbnail">
+            <span id="describir2"></span>
+        </div>
+          <span class="card-footer mb-2">por: Sofía Gonzalez</span>
+          <button type="button" onclick="open2()" class="btn btn-outline-info col-12 mb-2" data-bs-toggle="modal" data-bs-target="#explayar">Más info</button>
+        
+        </div>
+    <div class="col-sm-col-lg-6 col-xl-4 card">
+        <span class="h4 text-center card-header mt-2 titulos-individuales">Gabriela Cerruti</span>
+        <div class="card-body">
+            <img src="img/lacra.jpg" class="col-12 img-thumbnail" style="height: 250px;" alt="">
+            <span id="describir3"></span>
+        </div>
+        <span class="card-footer mb-2">por: Sofía Gonzalez</span>
+        <button type="button" onclick="open3()" class="btn btn-outline-info col-12 mb-2" data-bs-toggle="modal" data-bs-target="#explayar">Más infor</button>
+    </div> 
+  </div>
+</div>
+  <script type="text/javascript" src="js/java.js"></script>
+</body>
+</html>
